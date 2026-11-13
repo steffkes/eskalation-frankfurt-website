@@ -1,15 +1,12 @@
 <script setup>
 const { event } = await useEvent();
 
+// TODO: verify length on site (sources say 42 m, TK Elevator says 47 m)
 const fakten = [
-  { zahl: "58 m", text: "Länge" },
-  { zahl: "24 m", text: "Höhe" },
-  { zahl: "90 s", text: "Fahrzeit" },
+  { zahl: "42 m", text: "Länge" },
+  { zahl: "Feb '27", text: "voraussichtlich" },
+  { zahl: "Sa", text: "Renntag" },
 ];
-
-// looping videos need a way to stop them (WCAG 2.2.2)
-const togglePlay = (e) =>
-  e.target.paused ? e.target.play() : e.target.pause();
 </script>
 
 <template>
@@ -21,15 +18,15 @@ const togglePlay = (e) =>
         </p>
 
         <p class="is-size-5">
-          Der Treppenlauf für Feuerwehrleute gegen die Rolltreppe – 2027 auf der
-          längsten freistehenden Rolltreppe Deutschlands, am Ruhr Museum im
-          UNESCO-Welterbe Zollverein in Essen.
+          Der Treppenlauf für Feuerwehrleute gegen die Rolltreppe – im Februar
+          2027 auf der langen Rolltreppe im MyZeil in Frankfurt, unter der
+          gläsernen Kuppel.
         </p>
 
         <p>
           Hochhäuser, Skiflugschanzen, Aussichtstürme – alles schon gelaufen.
-          Aber eine Treppe, die dir entgegenkommt? Das gab's in Deutschland noch
-          nie.
+          Aber eine Treppe, die dir entgegenkommt? Mitten in der Stadt, vor
+          Publikum?
         </p>
       </div>
 
@@ -46,35 +43,25 @@ const togglePlay = (e) =>
         </a>
       </p>
 
-      <h2 class="title is-4">So fühlt sich das an</h2>
+      <h2 class="title is-4">Das ist die Strecke</h2>
 
-      <div class="columns is-mobile videos mb-5">
+      <div class="columns is-mobile bilder mb-5">
         <figure class="column">
-          <video
-            src="/videos/laeufer-nach-oben.mp4"
-            autoplay
-            muted
-            loop
-            playsinline
-            preload="auto"
-            title="Klicken zum Pausieren"
-            @click="togglePlay"
-          ></video>
+          <img
+            src="/images/myzeil/nach-oben.jpg"
+            alt="Blick die lange Rolltreppe hinauf, neben dem gläsernen Trichter"
+            loading="lazy"
+          />
           <figcaption class="has-text-grey-dark is-size-7">
-            58 Meter. Kein Absatz. Keine Pause.
+            Kein Absatz. Keine Pause.
           </figcaption>
         </figure>
         <figure class="column">
-          <video
-            src="/videos/zollverein-testlauf.mp4"
-            autoplay
-            muted
-            loop
-            playsinline
-            preload="auto"
-            title="Klicken zum Pausieren"
-            @click="togglePlay"
-          ></video>
+          <img
+            src="/images/myzeil/nach-unten.jpg"
+            alt="Blick von oben auf die Rolltreppen unter der Glaskuppel"
+            loading="lazy"
+          />
           <figcaption class="has-text-grey-dark is-size-7">
             Die Treppe hört nicht auf. Du schon?
           </figcaption>
@@ -106,8 +93,8 @@ const togglePlay = (e) =>
 
       <div class="galerie mb-5">
         <img
-          src="/images/testlauf/team.jpg"
-          alt="Feuerwehrleute lachend am Ende der Rolltreppe"
+          src="/images/myzeil/rolltreppe-lang.jpg"
+          alt="Die freitragende Rolltreppe zieht sich quer durch das Atrium"
           class="breit"
           loading="lazy"
         />
@@ -120,34 +107,34 @@ const togglePlay = (e) =>
   </section>
 
   <ImageSection
-    url="/images/testlauf/rolltreppe-nacht.jpg"
-    :position="{ y: 60 }"
+    url="/images/myzeil/trichter.jpg"
+    :position="{ y: 50 }"
     :ratio="3 / 4"
   >
     <h2 class="title is-4">Wo &amp; wann</h2>
 
     <div class="content">
       <p>
-        <strong>Ruhr Museum, Zollverein Essen.</strong> Die orange Rolltreppe an
-        der ehemaligen Kohlenwäsche, hinauf zum Museum – Industriekulisse
-        inklusive.
+        <strong>MyZeil, Zeil 106, Frankfurt am Main.</strong> Die lange
+        Rolltreppe unter dem gläsernen Trichter, mitten auf Frankfurts
+        Einkaufsmeile – Publikum auf allen Etagen inklusive.
       </p>
 
       <p>
-        <strong>2027.</strong> Der genaue Termin folgt – wer sich einträgt,
-        erfährt ihn zuerst.
+        <strong>Februar 2027.</strong> Voraussichtlich an einem Samstag – der
+        genaue Termin folgt. Wer sich einträgt, erfährt ihn zuerst.
       </p>
     </div>
 
     <div class="galerie quadrat mb-5">
       <img
-        src="/images/testlauf/rolltreppe-aussen.jpg"
-        alt="Die verglaste Rolltreppe an der Kohlenwäsche von außen"
+        src="/images/myzeil/glasdach.jpg"
+        alt="Rolltreppe unter dem Glasdach des MyZeil"
         loading="lazy"
       />
       <img
-        src="/images/testlauf/foerderturm.jpg"
-        alt="Der Förderturm von Schacht XII auf Zollverein"
+        src="/images/myzeil/skyline.jpg"
+        alt="Blick über Frankfurt auf die Skyline"
         loading="lazy"
       />
     </div>
@@ -209,23 +196,21 @@ const togglePlay = (e) =>
   color: #fff;
 }
 
-.videos {
+.bilder {
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.videos video {
-  cursor: pointer;
+.bilder img {
   display: block;
   width: 100%;
-  aspect-ratio: 9 / 16;
+  aspect-ratio: 3 / 4;
   object-fit: cover;
   border-radius: 6px;
-  background: #000;
 }
 
-.videos figcaption {
+.bilder figcaption {
   margin-top: 0.25rem;
 }
 

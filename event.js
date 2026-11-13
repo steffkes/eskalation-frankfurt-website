@@ -2,18 +2,18 @@
 export const event = {
   "@context": "https://schema.org",
   "@type": "SportsEvent",
-  url: "https://eskalation-essen.de",
-  name: "Eskalation Essen",
+  url: "https://eskalation-frankfurt.de",
+  name: "Eskalation Frankfurt",
   description:
-    "Der Treppenlauf für Feuerwehrleute gegen die Rolltreppe: rauf, während sie runterfährt. 2027 im Ruhr Museum auf Zollverein in Essen.",
+    "Der Treppenlauf für Feuerwehrleute gegen die Rolltreppe: rauf, während sie runterfährt. Voraussichtlich an einem Samstag im Februar 2027 im MyZeil in Frankfurt am Main.",
   location: {
     "@type": "Place",
-    name: "Ruhr Museum",
+    name: "MyZeil",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Gelsenkirchener Straße 181",
-      postalCode: "45309",
-      addressLocality: "Essen",
+      streetAddress: "Zeil 106",
+      postalCode: "60313",
+      addressLocality: "Frankfurt am Main",
       addressCountry: "DE",
     },
   },

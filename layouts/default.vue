@@ -15,7 +15,7 @@ useSeoMeta({
   ogImage: event.url + "/og.jpg",
   ogImageWidth: 1200,
   ogImageHeight: 630,
-  ogImageAlt: "Die orange Rolltreppe am Ruhr Museum auf Zollverein",
+  ogImageAlt: "Die Rolltreppen unter der Glaskuppel im MyZeil in Frankfurt",
   twitterTitle: shareTitle,
   twitterDescription: event.description,
 });
