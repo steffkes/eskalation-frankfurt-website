@@ -25,8 +25,8 @@ const fakten = [
 
         <p>
           Hochhäuser, Skiflugschanzen, Aussichtstürme – alles schon gelaufen.
-          Aber eine Treppe, die dir entgegenkommt? Mitten in der Stadt, vor
-          Publikum?
+          Aber eine Treppe, die dir entgegenkommt? Das gab's in Deutschland noch
+          nie.
         </p>
       </div>
 
@@ -48,18 +48,18 @@ const fakten = [
       <div class="columns is-mobile bilder mb-5">
         <figure class="column">
           <img
-            src="/images/myzeil/nach-oben.jpg"
-            alt="Blick die lange Rolltreppe hinauf, neben dem gläsernen Trichter"
+            src="/images/myzeil/ganze-strecke.jpg"
+            alt="Blick vom Ziel die ganze Rolltreppe hinunter"
             loading="lazy"
           />
           <figcaption class="has-text-grey-dark is-size-7">
-            Kein Absatz. Keine Pause.
+            Die ganze Strecke, vom Ziel aus. Kein Absatz. Keine Pause.
           </figcaption>
         </figure>
         <figure class="column">
           <img
-            src="/images/myzeil/nach-unten.jpg"
-            alt="Blick von oben auf die Rolltreppen unter der Glaskuppel"
+            src="/images/myzeil/blick-vom-ziel.jpg"
+            alt="Blick vom Ziel auf die Rolltreppe mit Menschen darauf"
             loading="lazy"
           />
           <figcaption class="has-text-grey-dark is-size-7">
@@ -93,8 +93,8 @@ const fakten = [
 
       <div class="galerie mb-5">
         <img
-          src="/images/myzeil/rolltreppe-lang.jpg"
-          alt="Die freitragende Rolltreppe zieht sich quer durch das Atrium"
+          src="/images/myzeil/letzte-stufen.jpg"
+          alt="Die letzten Stufen vor dem Ziel, unter dem Glasdach"
           class="breit"
           loading="lazy"
         />
@@ -128,8 +128,8 @@ const fakten = [
 
     <div class="galerie quadrat mb-5">
       <img
-        src="/images/myzeil/glasdach.jpg"
-        alt="Rolltreppe unter dem Glasdach des MyZeil"
+        src="/images/myzeil/rolltreppe-lang.jpg"
+        alt="Die Rolltreppe zieht sich quer durch das Atrium"
         loading="lazy"
       />
       <img
@@ -167,8 +167,8 @@ const fakten = [
 
 <style scoped>
 .fakten {
-  border-top: 3px solid #f26a1b;
-  border-bottom: 3px solid #f26a1b;
+  border-top: 3px solid #dab15e;
+  border-bottom: 3px solid #dab15e;
   padding: 0.75rem 0;
 }
 
@@ -176,7 +176,7 @@ const fakten = [
   font-size: 2rem;
   font-weight: 800;
   line-height: 1.1;
-  color: #f26a1b;
+  color: #8c6a22;
 }
 
 .fakt-text {
@@ -185,15 +185,15 @@ const fakten = [
 }
 
 .cta {
-  background: #f26a1b;
-  border-color: #f26a1b;
-  color: #fff;
+  background: #dab15e;
+  border-color: #dab15e;
+  color: #09090b;
   font-weight: 700;
 }
 
 .cta:hover {
-  background: #d95a10;
-  color: #fff;
+  background: #c99c3f;
+  color: #09090b;
 }
 
 .bilder {
