@@ -1,11 +1,11 @@
 <script setup>
 const { event } = await useEvent();
 
-// TODO: verify length on site (sources say 42 m, TK Elevator says 47 m)
+// 47 m total (42 m reine Förderlänge), 0,5 m/s, 90–97 s Fahrzeit
 const fakten = [
-  { zahl: "42 m", text: "Länge" },
-  { zahl: "Feb '27", text: "voraussichtlich" },
-  { zahl: "Sa", text: "Renntag" },
+  { zahl: "47 m", text: "Länge" },
+  { zahl: "1,8 km/h", text: "Tempo" },
+  { zahl: "~95 s", text: "Fahrzeit" },
 ];
 </script>
 
@@ -173,7 +173,8 @@ const fakten = [
 }
 
 .fakt-zahl {
-  font-size: 2rem;
+  font-size: clamp(1.4rem, 7vw, 2rem);
+  white-space: nowrap;
   font-weight: 800;
   line-height: 1.1;
   color: #8c6a22;
