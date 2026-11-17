@@ -45,10 +45,17 @@ const gebuehren = [
         </p>
 
         <p>
-          Genau das ist der Februar 2027: Wir laufen, wir werten – und wir
-          lernen, was funktioniert. Mit so vielen Läufer:innen wie bei einem
-          echten Wettkampf, damit die Kinderkrankheiten jetzt auffallen und
-          nicht erst später.
+          Die Nullserie ist ein echter Wettkampf – mit Zeitnahme, Wertung und
+          Siegerehrung, in Größe und Ablauf so, wie er später sein soll. Aber
+          sie ist die erste ihrer Art.
+          <strong>Rechne mit Ruckeln:</strong> Startzeiten verschieben sich,
+          Regeln werden vor Ort nachjustiert, nicht jeder Ablauf sitzt beim
+          ersten Mal.
+        </p>
+
+        <p>
+          Genau dafür ist sie da: Die Kinderkrankheiten sollen jetzt auffallen
+          – nicht erst, wenn die Serie läuft.
         </p>
       </div>
 
@@ -81,9 +88,16 @@ const gebuehren = [
         </ul>
 
         <p>
-          Ihr deckt die ganze Bandbreite ab – vom kurzen Sprint bis zum langen
-          Ausdauerlauf. Und ihr wisst, dass bei einer Premiere nicht alles nach
-          Plan läuft. Genau deshalb seid ihr dabei.
+          <strong>Warum nur ihr?</strong> Jeder dieser Wettkämpfe war neu, als
+          ihr ihn gelaufen seid. Ihr wisst, dass beim ersten Mal nicht alles
+          glatt läuft – und seid trotzdem gestartet. Genau diese Einstellung
+          braucht die Nullserie.
+        </p>
+
+        <p>
+          Und es ist unser Dankeschön: Wer schon mal bei uns am Start war, darf
+          als Erstes ran. <strong>Bevor die Treppe allen anderen
+          entgegenfährt, fährt sie euch entgegen.</strong>
         </p>
       </div>
 
