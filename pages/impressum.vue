@@ -21,7 +21,7 @@ useSeoMeta({
       <h4>Kontakt</h4>
       <p>
         Telefon: +49 160 970 48 114<br />
-        E-Mail: stefan@gelungen.es
+        E-Mail: stefan.matheis@eskalation-frankfurt.de
       </p>
 
       <h4>Umsatzsteuer-ID</h4>

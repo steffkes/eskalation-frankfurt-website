@@ -20,7 +20,7 @@ export const event = {
   organizer: {
     "@type": "Person",
     name: "Stefan Matheis",
-    email: "mailto:stefan@gelungen.es",
+    email: "mailto:stefan.matheis@eskalation-frankfurt.de",
     telephone: "+49 160 970 48 114",
   },
 };

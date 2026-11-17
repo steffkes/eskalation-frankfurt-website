@@ -3,6 +3,8 @@ const { event, subline } = await useEvent();
 
 const activeModal = ref(false);
 
+const route = useRoute();
+
 const shareTitle = event.name + " · " + subline;
 
 useSeoMeta({
@@ -11,11 +13,12 @@ useSeoMeta({
   ogDescription: event.description,
   ogSiteName: event.name,
   ogLocale: "de_DE",
-  ogUrl: event.url,
+  ogUrl: () => event.url + (route.path === "/" ? "" : route.path),
   ogImage: event.url + "/og.jpg",
   ogImageWidth: 1200,
   ogImageHeight: 630,
-  ogImageAlt: "Die Rolltreppen unter der Glaskuppel im MyZeil in Frankfurt",
+  ogImageAlt:
+    "Die lange Rolltreppe im MyZeil in Frankfurt, im Hintergrund die gläserne Kuppel",
   twitterTitle: shareTitle,
   twitterDescription: event.description,
 });
@@ -23,7 +26,6 @@ useSeoMeta({
 const activeNavbar = ref(false);
 const toggleNavbar = () => (activeNavbar.value = !activeNavbar.value);
 
-const route = useRoute();
 
 useHead({
   titleTemplate: (pageTitle) =>
