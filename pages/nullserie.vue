@@ -25,8 +25,8 @@ const wettkaempfe = [
 
 // status: "abgelaufen" (grau) · "aktiv" (gold) · ohne = kommt noch (normal)
 const gebuehren = [
-  { preis: "45 €", label: "Volllast", text: "ab [Datum folgt]" },
-  { preis: "40 €", label: "Normalbetrieb", text: "regulär" },
+  { preis: "45 €", label: "Volllast", text: "ab [Datum]" },
+  { preis: "40 €", label: "Normalbetrieb", text: "bis [Datum]" },
   { preis: "35 €", label: "Anlauf", text: "die ersten X", status: "aktiv" },
 ];
 </script>
@@ -204,6 +204,11 @@ const gebuehren = [
         </div>
       </div>
 
+      <p class="is-size-7 has-text-grey">
+        Je früher du dich anmeldest, desto günstiger. Wer zu spät kommt, zahlt
+        drauf.
+      </p>
+
       <h2 class="title is-4 mt-6">Was noch offen ist</h2>
 
       <div class="content">
@@ -211,7 +216,7 @@ const gebuehren = [
           <li>Der genaue Samstag im Februar 2027</li>
           <li>Das genaue Zeitfenster</li>
           <li>Wie viele Anmeldungen möglich sind</li>
-          <li>Ab wann der Late-Comer-Preis gilt</li>
+          <li>Ab wann der Volllast-Preis gilt</li>
           <li>Startabstand im Qualifying</li>
           <li>Anzahl der Finalplätze und die Cut-offs im Finale</li>
           <li>Ob die Männer in weitere Kategorien unterteilt werden</li>
