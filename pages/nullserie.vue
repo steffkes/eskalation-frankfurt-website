@@ -87,6 +87,21 @@ const gebuehren = [
         </p>
       </div>
 
+      <h2 class="title is-4 mt-6">G 26.3 – für alle</h2>
+
+      <div class="content">
+        <p>
+          Gelaufen wird ohne Atemschutz. Die G 26.3 brauchst du trotzdem:
+          <strong>Jede:r Teilnehmer:in muss eine gültige G 26.3
+          vorweisen.</strong>
+        </p>
+        <p>
+          Normalerweise verlangen wir sie nur in der Kategorie mit PA. Aber eine
+          Treppe, die dir entgegenkommt, geht ans Limit – deshalb diesmal für
+          alle.
+        </p>
+      </div>
+
       <h2 class="title is-4 mt-6">Der Takt</h2>
 
       <div class="content">
