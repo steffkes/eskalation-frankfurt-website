@@ -120,13 +120,11 @@ useHead({
 
       <slot />
 
-      <div class="px-6">
-        <p class="has-text-right">
-          <a href="/impressum" class="has-text-grey-light">Impressum</a>
-        </p>
-      </div>
-
-      <CompetitionsFooter :event="event" class="px-6 pb-6" />
+      <CompetitionsFooter
+        :event="event"
+        imprint="/impressum"
+        class="px-6 pb-6"
+      />
     </div>
   </div>
 </template>
