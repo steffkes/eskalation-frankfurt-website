@@ -162,6 +162,19 @@ const gebuehren = [
         </p>
       </div>
 
+      <h2 class="title is-4 mt-6">Wertung</h2>
+
+      <div class="content">
+        <p>
+          Ein Wettbewerb: <strong>ohne PA</strong>. Gewertet wird getrennt nach
+          <strong>Frauen und Männern</strong>, jeweils Platz 1 bis 3.
+        </p>
+        <p>
+          Gut möglich, dass wir die Männer noch weiter unterteilen.
+          <span class="tag is-warning is-light">in Überlegung</span>
+        </p>
+      </div>
+
       <h2 class="title is-4 mt-6">Startgebühr</h2>
 
       <div class="columns is-mobile is-gapless fakten mb-3">
@@ -187,6 +200,7 @@ const gebuehren = [
           <li>Ab wann der Late-Comer-Preis gilt</li>
           <li>Startabstand im Qualifying</li>
           <li>Anzahl der Finalplätze und die Cut-offs im Finale</li>
+          <li>Ob die Männer in weitere Kategorien unterteilt werden</li>
         </ul>
 
         <p>
