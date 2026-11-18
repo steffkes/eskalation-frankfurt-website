@@ -151,7 +151,13 @@ const gebuehren = [
           finden wir bei der Nullserie heraus.
           <span class="tag is-warning is-light">stellt sich heraus</span>
         </p>
+      </div>
 
+      <QuoteElement name="Marcus" department="FF Taufkirchen/Vils">
+        Ja bist du deppert 🙈
+      </QuoteElement>
+
+      <div class="content">
         <p class="mb-2">
           <strong>Wann die Treppe gewinnt</strong>
           <span class="tag is-warning is-light">in Überlegung</span>
