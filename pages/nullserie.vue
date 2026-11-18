@@ -54,9 +54,9 @@ const zuletzt = computed(() => {
 
 // status: "abgelaufen" (grau) · "aktiv" (gold) · ohne = kommt noch (normal)
 const gebuehren = [
-  { preis: "45 €", label: "Volllast", text: "ab [Datum]" },
-  { preis: "40 €", label: "Normalbetrieb", text: "bis [Datum]" },
-  { preis: "35 €", label: "Anlauf", text: "bis [Datum]" },
+  { preis: "45 €", label: "Volllast", text: "ab 01.01.*" },
+  { preis: "40 €", label: "Normalbetrieb", text: "bis 31.12.*" },
+  { preis: "35 €", label: "Anlauf", text: "bis 13.12.*" },
 ];
 </script>
 
@@ -241,7 +241,9 @@ const gebuehren = [
 
       <p class="is-size-7 has-text-grey">
         Je früher du dich anmeldest, desto günstiger. Wer zu spät kommt, zahlt
-        drauf.
+        drauf.<br />
+        * Vorläufig. Sobald der Wettkampftag feststeht, passen wir die Fristen
+        an.
       </p>
 
       <div class="kaltstart mt-5">
