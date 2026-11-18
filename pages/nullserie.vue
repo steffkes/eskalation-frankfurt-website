@@ -23,6 +23,35 @@ const wettkaempfe = [
   { name: "Fire Trail Nesselwang", jahr: "2026" },
 ];
 
+// Kaltstart: wie oft gebucht, wann zuletzt – nur im Browser, damit die
+// Seite nicht auf Stripe wartet; bei Fehler oder 0 wird nichts angezeigt
+const { data: kaltstart } = useFetch("/api/kaltstart", {
+  server: false,
+  lazy: true,
+});
+
+const relativ = new Intl.RelativeTimeFormat("de", { numeric: "auto" });
+const zuletzt = computed(() => {
+  if (!kaltstart.value?.last) return null;
+  const sekunden = (new Date(kaltstart.value.last) - Date.now()) / 1000;
+  const stufen = [
+    [60, "second"],
+    [60, "minute"],
+    [24, "hour"],
+    [7, "day"],
+    [4.35, "week"],
+    [12, "month"],
+    [Infinity, "year"],
+  ];
+  let wert = sekunden;
+  for (const [teiler, einheit] of stufen) {
+    if (Math.abs(wert) < teiler) {
+      return relativ.format(Math.round(wert), einheit);
+    }
+    wert /= teiler;
+  }
+});
+
 // status: "abgelaufen" (grau) · "aktiv" (gold) · ohne = kommt noch (normal)
 const gebuehren = [
   { preis: "45 €", label: "Volllast", text: "ab [Datum]" },
@@ -248,6 +277,11 @@ const gebuehren = [
           </ul>
         </div>
 
+        <p v-if="kaltstart?.count" class="kaltstart-stand mt-4">
+          <strong>{{ kaltstart.count }}×</strong> gebucht · zuletzt
+          {{ zuletzt }}
+        </p>
+
         <a
           href="https://buy.stripe.com/3cIeVc8pgeGR7la9M78ww00"
           class="button is-medium is-fullwidth cta mt-4"
@@ -346,6 +380,16 @@ const gebuehren = [
 .cta:hover {
   background: #c99c3f;
   color: #09090b;
+}
+
+.kaltstart-stand {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #4a4a4a;
+}
+
+.kaltstart-stand strong {
+  color: #8c6a22;
 }
 
 .kaltstart {
