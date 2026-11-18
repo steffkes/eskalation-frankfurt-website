@@ -246,8 +246,17 @@ const gebuehren = [
               kannst du ihn auch 2028 einlösen.
             </li>
           </ul>
-          <p><strong>So kommst du dran:</strong> [folgt]</p>
         </div>
+
+        <a
+          href="https://buy.stripe.com/3cIeVc8pgeGR7la9M78ww00"
+          class="button is-medium is-fullwidth cta mt-4"
+        >
+          Kaltstart sichern · 30&nbsp;€
+        </a>
+        <p class="is-size-7 has-text-grey has-text-centered mt-2">
+          Bezahlt wird sicher über Stripe.
+        </p>
       </div>
 
       <h2 class="title is-4 mt-6">Was noch offen ist</h2>
@@ -325,6 +334,18 @@ const gebuehren = [
 .gebuehr.aktiv .fakt-text {
   color: #09090b;
   font-weight: 600;
+}
+
+.cta {
+  background: #dab15e;
+  border-color: #dab15e;
+  color: #09090b;
+  font-weight: 700;
+}
+
+.cta:hover {
+  background: #c99c3f;
+  color: #09090b;
 }
 
 .kaltstart {
