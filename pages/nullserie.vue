@@ -27,7 +27,7 @@ const wettkaempfe = [
 const gebuehren = [
   { preis: "45 €", label: "Volllast", text: "ab [Datum]" },
   { preis: "40 €", label: "Normalbetrieb", text: "bis [Datum]" },
-  { preis: "35 €", label: "Anlauf", text: "die ersten X", status: "aktiv" },
+  { preis: "35 €", label: "Anlauf", text: "bis [Datum]" },
 ];
 </script>
 
@@ -215,6 +215,41 @@ const gebuehren = [
         drauf.
       </p>
 
+      <div class="kaltstart mt-5">
+        <p class="kaltstart-kopf">
+          <span class="fakt-label">Nur jetzt</span>
+          <span class="kaltstart-titel">Kaltstart</span>
+          <span class="kaltstart-preis">30 €</span>
+        </p>
+
+        <div class="content">
+          <p>
+            Noch früher geht's nicht: Die Registrierung steht noch nicht – wer
+            uns jetzt schon vertraut, zahlt am wenigsten.
+          </p>
+          <ul>
+            <li>
+              Gilt als <strong>volle Startgebühr</strong> – für die Nullserie
+              2027 oder den Wettkampf 2028.
+            </li>
+            <li>
+              Du bekommst einen Gutscheincode und zahlst damit bei der
+              Registrierung.
+            </li>
+            <li>
+              Gibt es nur, bis die Registrierung steht. Danach gelten die Preise
+              oben.
+            </li>
+            <li>
+              Kann die Veranstaltung nicht stattfinden, bekommst du die 30&nbsp;€
+              komplett zurück. Persönliche Gründe sind nicht abgedeckt – dafür
+              kannst du ihn auch 2028 einlösen.
+            </li>
+          </ul>
+          <p><strong>So kommst du dran:</strong> [folgt]</p>
+        </div>
+      </div>
+
       <h2 class="title is-4 mt-6">Was noch offen ist</h2>
 
       <div class="content">
@@ -290,6 +325,44 @@ const gebuehren = [
 .gebuehr.aktiv .fakt-text {
   color: #09090b;
   font-weight: 600;
+}
+
+.kaltstart {
+  border: 3px solid #dab15e;
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+}
+
+.kaltstart-kopf {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.kaltstart .fakt-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.1em 0.5em;
+  border-radius: 3px;
+  background: #dab15e;
+  color: #09090b;
+}
+
+.kaltstart-titel {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.kaltstart-preis {
+  margin-left: auto;
+  font-size: clamp(1.7rem, 8.5vw, 2.6rem);
+  font-weight: 800;
+  line-height: 1;
+  color: #8c6a22;
 }
 
 .wettkaempfe {
