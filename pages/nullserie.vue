@@ -279,19 +279,21 @@ const gebuehren = [
           </ul>
         </div>
 
-        <p v-if="kaltstart?.count" class="kaltstart-stand mt-4">
-          <strong>{{ kaltstart.count }}×</strong> gebucht · zuletzt
-          {{ zuletzt }}
-        </p>
-
         <a
           href="https://buy.stripe.com/3cIeVc8pgeGR7la9M78ww00"
           class="button is-medium is-fullwidth cta mt-4"
         >
           Kaltstart sichern · 30&nbsp;€
         </a>
-        <p class="is-size-7 has-text-grey has-text-centered mt-2">
-          Bezahlt wird sicher über Stripe.
+        <p class="kaltstart-fuss is-size-7 has-text-grey mt-2">
+          <template v-if="kaltstart?.count">
+            <span class="kaltstart-stand"
+              ><strong>{{ kaltstart.count }}×</strong> gebucht, zuletzt
+              {{ zuletzt }}</span
+            >
+            ·
+          </template>
+          <span class="nowrap">Bezahlt wird sicher über Stripe.</span>
         </p>
       </div>
 
@@ -384,10 +386,17 @@ const gebuehren = [
   color: #09090b;
 }
 
-.kaltstart-stand {
+.kaltstart-fuss {
   text-align: center;
-  font-size: 0.9rem;
+}
+
+.kaltstart-stand {
   color: #4a4a4a;
+  white-space: nowrap;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
 
 .kaltstart-stand strong {
