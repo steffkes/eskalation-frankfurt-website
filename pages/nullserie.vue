@@ -73,6 +73,10 @@ const gebuehren = [
           gefertigt wird. Echt, aber noch nicht fertig.
         </p>
 
+        <p class="is-size-5 has-text-weight-bold">
+          Echte Zeit. Echte Wertung. Echte Sieger.<br />
+          Und eine Treppe, die nicht auf dich wartet.
+        </p>
         <p>
           Die Nullserie ist ein echter Wettkampf – mit Zeitnahme, Wertung und
           Siegerehrung, in Größe und Ablauf so, wie er später sein soll. Aber
@@ -84,7 +88,8 @@ const gebuehren = [
 
         <p>
           Genau dafür ist sie da: Die Kinderkrankheiten sollen jetzt auffallen
-          – nicht erst, wenn die Serie läuft.
+          – nicht erst im Regelbetrieb. Was wir hier lernen, legt Startabstände,
+          Abläufe und Finalfeld für die Serie fest.
         </p>
       </div>
 
@@ -135,9 +140,8 @@ const gebuehren = [
       <div class="content">
         <p>
           Gelaufen wird ohne Atemschutz – das Gerät hast du trotzdem auf dem
-          Rücken. Die G 26.3 brauchst du ebenfalls:
-          <strong>Jede:r Teilnehmer:in muss eine gültige G 26.3
-          vorweisen.</strong>
+          Rücken. Und für alle gilt:
+          <strong>Gültige G 26.3 – oder kein Start.</strong>
         </p>
         <p>
           Normalerweise verlangen wir sie nur, wenn mit Maske und angeschlossenem
@@ -170,7 +174,11 @@ const gebuehren = [
 
         <h3 class="is-size-5">2. Finale – die Treppe fährt abwärts</h3>
         <p>
-          Jetzt fährt sie dir entgegen. Immer nur eine Person auf der Treppe.
+          Jetzt fährt sie dir entgegen. <strong>Dein Ziel: oben ankommen. Ihr
+          Ziel: dich wieder nach unten bringen.</strong>
+        </p>
+        <p>
+          Immer nur eine Person auf der Treppe.
           Die Startreihenfolge ergibt sich aus dem Qualifying:
           <strong>die schnellste Zeit startet zuerst</strong>, danach
           absteigend.
@@ -322,7 +330,7 @@ const gebuehren = [
         </p>
 
         <p class="is-size-5 has-text-weight-bold mt-5">
-          Ist sie zu stark, bist du zu schwach. Finden wir's raus 🦾
+          Steig auf. Oder die Treppe schickt dich zurück. 🦾
         </p>
       </div>
     </div>
