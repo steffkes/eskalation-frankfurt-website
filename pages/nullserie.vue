@@ -78,11 +78,12 @@ const gebuehren = [
           Und eine Treppe, die nicht auf dich wartet.
         </p>
         <p>
-          Die Nullserie ist ein echter Wettkampf – mit Zeitnahme, Wertung und
-          Siegerehrung, in Größe und Ablauf so, wie er später sein soll. Aber
-          sie ist die erste ihrer Art.
-          <strong>Rechne mit Ruckeln:</strong> Startzeiten verschieben sich,
-          Regeln werden vor Ort nachjustiert, nicht jeder Ablauf sitzt beim
+          Die Nullserie ist ein echter Wettkampf, in Größe und Ablauf so, wie er
+          später sein soll. Aber sie ist die erste ihrer Art.
+        </p>
+        <p>
+          <strong>Rechne mit Ruckeln.</strong> Startzeiten verschieben sich.
+          Regeln werden vor Ort nachjustiert. Nicht jeder Ablauf sitzt beim
           ersten Mal.
         </p>
 
@@ -122,16 +123,24 @@ const gebuehren = [
         </ul>
 
         <p>
-          <strong>Warum nur ihr?</strong> Jeder dieser Wettkämpfe war neu, als
-          ihr ihn gelaufen seid. Ihr wisst, dass beim ersten Mal nicht alles
-          glatt läuft – und seid trotzdem gestartet. Genau diese Einstellung
-          braucht die Nullserie.
+          <strong>Warum gerade du?</strong> Nicht, weil du schneller bist als
+          andere. Sondern weil du schon mal dabei warst, als etwas zum ersten
+          Mal lief.
+        </p>
+        <p>
+          Jeder dieser Wettkämpfe war neu, als du ihn gelaufen bist. Du weißt,
+          dass beim ersten Mal nicht alles glatt läuft. Und du bist trotzdem
+          gestartet. Genau diese Einstellung braucht die Nullserie.
+        </p>
+        <p>
+          Wie schnell man sein muss, legen wir erst bei der Nullserie fest. Die
+          Bestzeiten kommen, wenn alles steht.
         </p>
 
         <p>
           Und es ist unser Dankeschön: Wer schon mal bei uns am Start war, darf
           als Erstes ran. <strong>Bevor die Treppe allen anderen
-          entgegenfährt, fährt sie euch entgegen.</strong>
+          entgegenfährt, fährt sie dir entgegen.</strong>
         </p>
       </div>
 
@@ -144,9 +153,9 @@ const gebuehren = [
           <strong>Gültige G 26.3 – oder kein Start.</strong>
         </p>
         <p>
-          Normalerweise verlangen wir sie nur, wenn mit Maske und angeschlossenem
-          Atemschutz gelaufen wird. Aber eine Treppe, die dir entgegenkommt, geht
-          ans Limit – deshalb diesmal für alle.
+          Normalerweise brauchst du sie nur, wenn du mit Maske läufst. Aber eine
+          Treppe, die dir entgegenkommt, geht ans Limit. Deshalb diesmal für
+          alle.
         </p>
       </div>
 
@@ -165,10 +174,10 @@ const gebuehren = [
       <div class="content">
         <h3 class="is-size-5">1. Qualifying – die Treppe steht</h3>
         <p>
-          Du läufst sie hoch wie eine normale Treppe. Wahrscheinlich sind dabei
-          zwei Läufer:innen gleichzeitig unterwegs: Der nächste Start erfolgt
-          nach einer festen Zeit – oder, wenn du eine Markierung auf halber
-          oder Dreiviertel-Höhe passierst.
+          Du läufst sie hoch wie eine normale Treppe. Wahrscheinlich bist du
+          nicht allein auf der Treppe. Hinter dir geht es los, sobald eine feste
+          Zeit um ist – oder sobald du eine Markierung passierst. Die liegt auf
+          halber oder Dreiviertel-Höhe.
           <span class="tag is-warning is-light">wird festgelegt</span>
         </p>
 
@@ -179,14 +188,13 @@ const gebuehren = [
         </p>
         <p>
           Immer nur eine Person auf der Treppe.
-          Die Startreihenfolge ergibt sich aus dem Qualifying:
-          <strong>die schnellste Zeit startet zuerst</strong>, danach
-          absteigend.
+          Die Reihenfolge kommt aus dem Qualifying:
+          <strong>Die schnellste Zeit startet zuerst.</strong>
         </p>
         <p>
-          Wie viele ins Finale kommen, wissen wir ehrlich gesagt noch nicht. Es
-          hängt davon ab, wie lange die Läufer:innen vor dir brauchen – und das
-          finden wir bei der Nullserie heraus.
+          Wie viele ins Finale kommen, wissen wir noch nicht. Das hängt davon
+          ab, wie lange jeder Lauf dauert. Genau das finden wir bei der
+          Nullserie heraus.
           <span class="tag is-warning is-light">stellt sich heraus</span>
         </p>
       </div>
@@ -269,7 +277,7 @@ const gebuehren = [
 
         <div class="content">
           <p>
-            Noch früher geht's nicht: Die Registrierung steht noch nicht – wer
+            Noch früher geht's nicht. Die Registrierung steht noch nicht. Wer
             uns jetzt schon vertraut, zahlt am wenigsten.
           </p>
           <ul>
@@ -286,9 +294,9 @@ const gebuehren = [
               oben.
             </li>
             <li>
-              Kann die Veranstaltung nicht stattfinden, bekommst du die 30&nbsp;€
-              komplett zurück. Persönliche Gründe sind nicht abgedeckt – dafür
-              kannst du ihn auch 2028 einlösen.
+              Kann der Wettkampf nicht stattfinden, bekommst du die 30&nbsp;€
+              komplett zurück. Persönliche Gründe sind nicht abgedeckt. Dafür
+              kannst du den Code auch 2028 einlösen.
             </li>
           </ul>
         </div>
@@ -325,8 +333,8 @@ const gebuehren = [
         </ul>
 
         <p>
-          Das ist der Deal der Nullserie: Du bringst Flexibilität mit, wir
-          bringen eine Treppe, die es so noch nie gab.
+          So läuft die Nullserie: Du bringst Flexibilität mit. Wir bringen eine
+          Treppe, die es so noch nie gab.
         </p>
 
         <p class="is-size-5 has-text-weight-bold mt-5">
