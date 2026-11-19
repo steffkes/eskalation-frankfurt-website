@@ -134,14 +134,15 @@ const gebuehren = [
 
       <div class="content">
         <p>
-          Gelaufen wird ohne Atemschutz. Die G 26.3 brauchst du trotzdem:
+          Gelaufen wird ohne Atemschutz – das Gerät hast du trotzdem auf dem
+          Rücken. Die G 26.3 brauchst du ebenfalls:
           <strong>Jede:r Teilnehmer:in muss eine gültige G 26.3
           vorweisen.</strong>
         </p>
         <p>
-          Normalerweise verlangen wir sie nur in der Kategorie mit PA. Aber eine
-          Treppe, die dir entgegenkommt, geht ans Limit – deshalb diesmal für
-          alle.
+          Normalerweise verlangen wir sie nur, wenn mit Maske und angeschlossenem
+          Atemschutz gelaufen wird. Aber eine Treppe, die dir entgegenkommt, geht
+          ans Limit – deshalb diesmal für alle.
         </p>
       </div>
 
@@ -215,8 +216,13 @@ const gebuehren = [
 
       <div class="content">
         <p>
-          Ein Wettbewerb: <strong>ohne PA</strong>. Gewertet wird getrennt nach
-          <strong>Frauen und Männern</strong>, jeweils Platz 1 bis 3.
+          Ein Wettbewerb: <strong>ohne Atemschutz</strong>. Das heißt: komplette
+          Einsatzkleidung und das Atemschutzgerät geschultert auf dem Rücken –
+          aber die Maske nicht aufgesetzt und deshalb auch kein Lungenautomat.
+        </p>
+        <p>
+          Gewertet wird getrennt nach <strong>Frauen und Männern</strong>,
+          jeweils Platz 1 bis 3.
         </p>
         <p>
           Gut möglich, dass wir die Männer noch weiter unterteilen.
