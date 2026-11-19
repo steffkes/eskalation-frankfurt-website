@@ -90,7 +90,7 @@ const gebuehren = [
 
       <div class="columns is-mobile is-gapless fakten mb-6">
         <div class="column has-text-centered">
-          <p class="fakt-zahl">Feb '27</p>
+          <p class="fakt-zahl">Feb 2027</p>
           <p class="fakt-text">ein Samstag</p>
         </div>
         <div class="column has-text-centered">
