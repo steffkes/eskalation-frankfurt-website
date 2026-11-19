@@ -7,6 +7,8 @@ const Schema = z.strictObject({
   name: required,
   phone: required,
   origin: required,
+  // set automatically by the form on /nullserie
+  nullserie: z.boolean().optional(),
   // honeypot: hidden in the form, only bots fill it in
   website: z.string().optional(),
 });
@@ -19,7 +21,7 @@ export default defineEventHandler(async (event) => {
     return { status: 400, message: z.treeifyError(result.error) };
   }
 
-  const { website, ...data } = result.data;
+  const { website, nullserie, ...data } = result.data;
 
   // pretend it worked, so bots don't retry
   if (website) {
@@ -30,7 +32,7 @@ export default defineEventHandler(async (event) => {
     await new Airtable()
       .base("appNZZJx2wyLsROCg")
       .table("tblkn6qNqYB98nImM")
-      .create(data);
+      .create(nullserie ? { ...data, nullserie } : data);
 
     return setResponseStatus(event, 202);
   } catch (error) {

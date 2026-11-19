@@ -144,6 +144,22 @@ const gebuehren = [
         </p>
       </div>
 
+      <details class="warteliste mt-5">
+        <summary class="has-text-weight-bold">
+          Du warst bei keinem davon dabei – willst aber unbedingt?
+        </summary>
+        <p class="mt-3">
+          Das freut uns riesig! Die Nullserie bleibt aber bei denen, die schon
+          mal ein erstes Mal mit uns gelaufen sind.
+        </p>
+        <p class="mb-4">
+          Trag dich trotzdem ein: Wir melden uns, wenn Eskalation Essen
+          losgeht – und spätestens, wenn die Treppe in Frankfurt 2028 allen
+          entgegenfährt.
+        </p>
+        <InterestForm nullserie />
+      </details>
+
       <h2 class="title is-4 mt-6">G 26.3 – für alle</h2>
 
       <div class="content">
@@ -423,6 +439,33 @@ const gebuehren = [
 
 .kaltstart-stand strong {
   color: #8c6a22;
+}
+
+.warteliste {
+  background: #f5f5f5;
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+}
+
+.warteliste summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.warteliste summary::-webkit-details-marker {
+  display: none;
+}
+
+.warteliste summary::after {
+  content: "+";
+}
+
+.warteliste[open] summary::after {
+  content: "–";
 }
 
 .kaltstart {

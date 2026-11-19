@@ -1,4 +1,8 @@
 <script setup>
+// nullserie: form on /nullserie for people who weren't at one of the past
+// competitions but still want in; flags the Airtable entry automatically
+const { nullserie } = defineProps({ nullserie: Boolean });
+
 const { event, subline } = await useEvent();
 
 const name = ref("");
@@ -21,6 +25,7 @@ async function contactForm() {
         phone: phone.value,
         origin: origin.value,
         website: website.value,
+        ...(nullserie && { nullserie: true }),
       },
     });
     isSent.value = true;
@@ -33,7 +38,14 @@ async function contactForm() {
 </script>
 
 <template>
-  <div v-if="isSent" class="notification is-success">
+  <div v-if="isSent && nullserie" class="notification is-success">
+    <p>
+      <strong>Danke, du stehst auf der Liste!</strong> Wir melden uns, sobald
+      es in Essen losgeht oder Frankfurt 2028 für alle fährt.
+    </p>
+  </div>
+
+  <div v-else-if="isSent" class="notification is-success">
     <p>
       <strong>Danke =) Wir freuen uns, dass du dich freust!</strong> Wir melden
       uns, sobald es etwas Neues gibt zu {{ event.name }} ·
