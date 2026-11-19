@@ -310,7 +310,7 @@ const gebuehren = [
           <li>Der genaue Samstag im Februar 2027</li>
           <li>Das genaue Zeitfenster</li>
           <li>Wie viele Anmeldungen möglich sind</li>
-          <li>Ab wann der Volllast-Preis gilt</li>
+          <li>Die genauen Fristen für die Startgebühr</li>
           <li>Startabstand im Qualifying</li>
           <li>Anzahl der Finalplätze und die Cut-offs im Finale</li>
           <li>Ob die Männer in weitere Kategorien unterteilt werden</li>
