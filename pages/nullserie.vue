@@ -90,7 +90,7 @@ const gebuehren = [
         <p>
           Genau dafür ist sie da: Die Kinderkrankheiten sollen jetzt auffallen
           – nicht erst im Regelbetrieb. Was wir hier lernen, legt Startabstände,
-          Abläufe und Finalfeld für die Serie fest.
+          Abläufe und Cut-offs für die Serie fest.
         </p>
       </div>
 
@@ -169,9 +169,9 @@ const gebuehren = [
           <strong>Gültige G 26.3 – oder kein Start.</strong>
         </p>
         <p>
-          Normalerweise brauchst du sie nur, wenn du mit Maske läufst. Aber eine
-          Treppe, die dir entgegenkommt, geht ans Limit. Deshalb diesmal für
-          alle.
+          Bei anderen Wettkämpfen brauchst du sie nur, wenn du mit Maske
+          läufst. Bei Eskalation nicht: Eine Treppe, die dir entgegenkommt, geht
+          ans Limit. Deshalb gilt die G 26.3 hier immer für alle.
         </p>
       </div>
 
@@ -188,30 +188,38 @@ const gebuehren = [
       <h2 class="title is-4 mt-6">Zwei Runden gegen die Treppe</h2>
 
       <div class="content">
-        <h3 class="is-size-5">1. Qualifying – die Treppe steht</h3>
+        <h3 class="is-size-5">1. Kalibrierung – die Treppe steht</h3>
         <p>
-          Du läufst sie hoch wie eine normale Treppe. Wahrscheinlich bist du
+          Alle laufen. Du läufst sie hoch wie eine normale Treppe, gegen die
+          Uhr. <strong>Deine Zeit legt deinen Startplatz in der Abnahme
+          fest.</strong>
+        </p>
+        <p>
+          Wahrscheinlich bist du
           nicht allein auf der Treppe. Hinter dir geht es los, sobald eine feste
           Zeit um ist – oder sobald du eine Markierung passierst. Die liegt auf
           halber oder Dreiviertel-Höhe.
           <span class="tag is-warning is-light">wird festgelegt</span>
         </p>
 
-        <h3 class="is-size-5">2. Finale – die Treppe fährt abwärts</h3>
+        <h3 class="is-size-5">2. Abnahme – die Treppe fährt abwärts</h3>
         <p>
           Jetzt fährt sie dir entgegen. <strong>Dein Ziel: oben ankommen. Ihr
           Ziel: dich wieder nach unten bringen.</strong>
         </p>
         <p>
-          Immer nur eine Person auf der Treppe.
-          Die Reihenfolge kommt aus dem Qualifying:
-          <strong>Die schnellste Zeit startet zuerst.</strong>
+          Immer nur eine Person auf der Treppe. Frauen und Männer haben je eine
+          Startliste nach Kalibrierungszeit.
+          <strong>Gestartet wird abwechselnd aus beiden, jeweils die Schnellsten
+          zuerst.</strong>
         </p>
+
+        <h3 class="is-size-5">Feierabend</h3>
         <p>
-          Wie viele ins Finale kommen, wissen wir noch nicht. Das hängt davon
-          ab, wie lange jeder Lauf dauert. Genau das finden wir bei der
-          Nullserie heraus.
-          <span class="tag is-warning is-light">stellt sich heraus</span>
+          Zu einer festen Uhrzeit ist Schluss. Danach startet niemand mehr zur
+          Abnahme. <strong>Ein Anrecht auf einen Start gibt es nicht – je
+          schneller deine Kalibrierung, desto sicherer dein Start.</strong>
+          <span class="tag is-warning is-light">Uhrzeit wird festgelegt</span>
         </p>
       </div>
 
@@ -222,11 +230,10 @@ const gebuehren = [
       <div class="content">
         <p class="mb-2">
           <strong>Wann die Treppe gewinnt</strong>
-          <span class="tag is-warning is-light">in Überlegung</span>
         </p>
         <ul>
           <li>
-            Wer nach <strong>einer Minute</strong> die Hälfte noch nicht
+            Wer nach <strong>60 Sekunden</strong> die Hälfte noch nicht
             erreicht hat.
           </li>
           <li>
@@ -253,12 +260,17 @@ const gebuehren = [
           aber die Maske nicht aufgesetzt und deshalb auch kein Lungenautomat.
         </p>
         <p>
-          Gewertet wird getrennt nach <strong>Frauen und Männern</strong>,
-          jeweils Platz 1 bis 3.
+          Kalibrierung und Abnahme werden <strong>getrennt gewertet</strong>,
+          jeweils für Frauen und Männer. Eine Gesamtwertung gibt es nicht.
         </p>
         <p>
-          Gut möglich, dass wir die Männer noch weiter unterteilen.
-          <span class="tag is-warning is-light">in Überlegung</span>
+          Geehrt werden <strong>Platz 1 bis 3 der Abnahme</strong>. Im ersten
+          Jahr ohne weitere Unterteilung.
+        </p>
+        <p>
+          <NuxtLink to="/wertung" class="has-text-weight-bold regeln-link"
+            >Alle Regeln, Ausrüstung und Ergebnislisten →</NuxtLink
+          >
         </p>
       </div>
 
@@ -343,9 +355,8 @@ const gebuehren = [
           <li>Das genaue Zeitfenster</li>
           <li>Wie viele Anmeldungen möglich sind</li>
           <li>Die genauen Fristen für die Startgebühr</li>
-          <li>Startabstand im Qualifying</li>
-          <li>Anzahl der Finalplätze und die Cut-offs im Finale</li>
-          <li>Ob die Männer in weitere Kategorien unterteilt werden</li>
+          <li>Startabstand in der Kalibrierung</li>
+          <li>Die Cut-offs und die Uhrzeit für Feierabend</li>
         </ul>
 
         <p>
@@ -422,6 +433,10 @@ const gebuehren = [
 .cta:hover {
   background: #c99c3f;
   color: #09090b;
+}
+
+.regeln-link {
+  color: #8c6a22;
 }
 
 .kaltstart-fuss {
