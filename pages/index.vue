@@ -121,8 +121,8 @@ const fakten = [
       </p>
 
       <p>
-        <strong>Februar 2027.</strong> Voraussichtlich an einem Samstag – der
-        genaue Termin folgt. Wer sich einträgt, erfährt ihn zuerst.
+        <strong>Februar 2027.</strong> An einem Wochenende – der genaue Termin
+        folgt. Wer sich einträgt, erfährt ihn zuerst.
       </p>
     </div>
 

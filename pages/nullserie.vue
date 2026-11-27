@@ -97,7 +97,7 @@ const gebuehren = [
       <div class="columns is-mobile is-gapless fakten mb-6">
         <div class="column has-text-centered">
           <p class="fakt-zahl">Feb 2027</p>
-          <p class="fakt-text">ein Samstag</p>
+          <p class="fakt-text">ein Wochenende</p>
         </div>
         <div class="column has-text-centered">
           <p class="fakt-zahl">10–14</p>
@@ -351,7 +351,7 @@ const gebuehren = [
 
       <div class="content">
         <ul>
-          <li>Der genaue Samstag im Februar 2027</li>
+          <li>Der genaue Tag im Februar 2027</li>
           <li>Das genaue Zeitfenster</li>
           <li>Wie viele Anmeldungen möglich sind</li>
           <li>Die genauen Fristen für die Startgebühr</li>
