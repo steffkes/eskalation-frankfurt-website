@@ -18,7 +18,7 @@ useSeoMeta({
   ogImageWidth: 1200,
   ogImageHeight: 630,
   ogImageAlt:
-    "Die lange Rolltreppe im MyZeil in Frankfurt, im Hintergrund die gläserne Kuppel",
+    "Blick von oben auf die lange, leere Rolltreppe im MyZeil in Frankfurt, ganz unten ein Feuerwehrmann in Einsatzkleidung",
   twitterTitle: shareTitle,
   twitterDescription: event.description,
 });
